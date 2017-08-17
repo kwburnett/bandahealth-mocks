@@ -1,0 +1,192 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+	color: black;
+}
+
+.mock {
+	position: relative;
+	display: inline-block;
+	background: url('/assets/img/phone-screen.png');
+	background-repeat: no-repeat;
+	height: 676px;
+	width: 330px;
+	margin-right: 30px;
+}
+
+.screen {
+	position: absolute;
+	top: 65px;
+	left: 12px;
+	right: 17px;
+	bottom: 110px;
+	display: grid;
+	z-index: 10;
+	grid-template-rows: 17px 42px 1fr;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.splash {
+	position: absolute;
+	top: 17px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.action-bar {
+	display: flex;
+	align-items: center;
+	background: #00c37b;
+}
+
+.main-content {
+	background: #fafafa;
+	font-size: 0.7em;
+	padding: 7px;
+}
+
+.icon {
+	height: 42px;
+	width: 50px;
+}
+
+.page-title {
+	color: white;
+	font-size: 0.7em;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.white {
+	background: #fff;
+}
+
+.overlay.white.transparent {
+	background: rgba(255, 255, 255, 0.6);
+}
+
+.overlay.black {
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.popup {
+	background: #fff;
+	margin: auto;
+	width: 290px;
+}
+
+.popup-info {
+	padding: 20px;
+}
+
+.popup-info.loading {
+	height: 30px;
+	margin-top: 5px;
+}
+
+.title {
+	background: #3b925a;
+	color: white;
+	height: 28px;
+	padding-left: 8px;
+	padding-top: 12px;
+}
+
+.loading {
+	grid-area: loading;
+	background-image: url('/assets/img/loading.gif');
+	background-size: 60px 60px;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.info {
+	grid-area: info;
+	text-align: center;
+}
+
+.statuses {
+	display: grid;
+	grid-template-columns: 180px 1fr;
+	margin-left: 10px;
+	grid-gap: 10px;
+}
+
+.item {
+	vertical-align: middle;
+	font-style: italic;
+}
+
+.progress {
+	background-image: url('/assets/img/loading.gif');
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: left -2px;
+}
+
+.statuses.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+}
+
+.card {
+	width: 275px;
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 0px 2px 1px #ddd;
+	margin-bottom: 15px;
+}
+
+.status {
+	padding-left: 10px;
+	display: grid;
+	grid-template-columns: 240px 1fr;
+	height: 20px;
+	padding-top: 10px;
+}
+
+.status .progress {
+	margin-top: -5px;
+}
+
+.splash .loading {
+	height: 60px;
+	width: 60px;
+	margin-top: 25px;
+}
+
+.single-progress {
+	margin-top: 35px;
+	font-style: italic;
+}
+
+.logo {
+	width: 250px;
+	height: 160px;
+	background-image: url('/assets/img/logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 250px;
+	margin-top: -40px;
+}
